@@ -5,7 +5,7 @@ public class CalculadoraPrestamo {
     }
 
     public static double calcularTotalAPagar(double prestamo, double interes) {
-        return 0;
+        return prestamo + interes;
     }
 
     public static double calcularCuotaMensual(double total, int meses) {

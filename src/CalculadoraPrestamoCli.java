@@ -27,13 +27,23 @@ public class CalculadoraPrestamoCli {
                     System.out.printf("Interés generado: $%.2f%n", interes);
                     break;
                 case 2:
-                    System.out.println("(Módulo pendiente - Integrante 2)");
+                    System.out.print("Ingrese el valor del préstamo: ");
+                    double p2 = scanner.nextDouble();
+                    System.out.print("Ingrese la tasa de interés (%): ");
+                    double t2 = scanner.nextDouble();
+                    System.out.print("Ingrese el número de meses: ");
+                    int m2 = scanner.nextInt();
+                    double i2 = CalculadoraPrestamo.calcularInteresSimple(p2, t2, m2);
+                    double total2 = CalculadoraPrestamo.calcularTotalAPagar(p2, i2);
+                    System.out.printf("Total a pagar: $%.2f%n", total2);
                     break;
                 case 3:
                     System.out.println("(Módulo pendiente - Integrante 3)");
+
                     break;
                 case 4:
                     System.out.println("(Módulo pendiente - Integrante 4)");
+
                     break;
                 case 5:
                     System.out.println("¡Hasta luego!");
