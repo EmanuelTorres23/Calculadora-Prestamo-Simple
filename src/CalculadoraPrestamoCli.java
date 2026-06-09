@@ -38,8 +38,16 @@ public class CalculadoraPrestamoCli {
                     System.out.printf("Total a pagar: $%.2f%n", total2);
                     break;
                 case 3:
-
-
+                    System.out.print("Ingrese el valor del préstamo: ");
+                    double p3 = scanner.nextDouble();
+                    System.out.print("Ingrese la tasa de interés (%): ");
+                    double t3 = scanner.nextDouble();
+                    System.out.print("Ingrese el número de meses: ");
+                    int m3 = scanner.nextInt();
+                    double i3 = CalculadoraPrestamo.calcularInteresSimple(p3, t3, m3);
+                    double total3 = CalculadoraPrestamo.calcularTotalAPagar(p3, i3);
+                    double cuota = CalculadoraPrestamo.calcularCuotaMensual(total3, m3);
+                    System.out.printf("Cuota mensual: $%.2f%n", cuota);
                     break;
                 case 4:
                     System.out.print("Ingrese el valor del préstamo: ");
