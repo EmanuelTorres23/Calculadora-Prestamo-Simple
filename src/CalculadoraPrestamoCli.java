@@ -38,12 +38,15 @@ public class CalculadoraPrestamoCli {
                     System.out.printf("Total a pagar: $%.2f%n", total2);
                     break;
                 case 3:
-                    System.out.println("(Módulo pendiente - Integrante 3)");
+
 
                     break;
                 case 4:
-                    System.out.println("(Módulo pendiente - Integrante 4)");
-
+                    System.out.print("Ingrese el valor del préstamo: ");
+                    double p4 = scanner.nextDouble();
+                    System.out.print("Ingrese la tasa de interés (%): ");
+                    double t4 = scanner.nextDouble();
+                    CalculadoraPrestamo.compararCuotasPorPlazo(p4, t4);
                     break;
                 case 5:
                     System.out.println("¡Hasta luego!");
