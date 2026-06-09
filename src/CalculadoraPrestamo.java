@@ -13,5 +13,14 @@ public class CalculadoraPrestamo {
     }
 
     public static void compararCuotasPorPlazo(double prestamo, double tasa) {
+        int[] plazos = {6, 12, 24};
+        System.out.println("Comparación de cuotas:");
+        for (int plazo : plazos) {
+            double interes = calcularInteresSimple(prestamo, tasa, plazo);
+            double total = prestamo + interes;
+            double cuota = total / plazo;
+            System.out.printf("%d meses -> $%.2f%n", plazo, cuota);
+        }
+
     }
 }
