@@ -28,3 +28,20 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Java Extras & Build Tools ###
+*.jar
+*.war
+*.zip
+/target/
+/build/
+
+### Windows OS ###
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+### Logs & Extras ###
+*.log
+.history/
